@@ -173,6 +173,7 @@ p.thick {
 1. file list wont update properly sometimes, this is mainly related to the pastebin service itself. 
 2. converting to hex string doubles the file size(in the pastes), resulting in slow upload and download. more efficent way to save binary data in string format `(utf-8)` is needed.
 3. need to organize code and error handleing.
+4. uploads are for everyone to see (if not private).
 
 ### to-do:
 
@@ -181,3 +182,4 @@ p.thick {
 3. update function? (delete and reupload).
 4. add an option to upload as a pastebin guest, saving the file list locally.
 5. add a user data function (get all user parameters, such as premium, history etc)
+6. encryption?
