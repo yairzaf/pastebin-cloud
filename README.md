@@ -3,7 +3,8 @@
 
 
 useage:
-'''python
+
+```
 import pastebincloud #import the api
 
 mycloudobject = pastebincloud.Cloud("myusername","myuserpassword","mydeveloperkey") #create an instance
@@ -33,4 +34,4 @@ mycloudobject.delete("paste name")
 #paste name - will delete all pastes associated with that name
 
 
-'''
+```
