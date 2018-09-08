@@ -21,7 +21,8 @@ time_delay = mycloudobject.delay() #returns how many seconds you are required to
 
 mycloudobject.upload("file path","upload name[optional]","private status[optional:0 default]")
 
-#file path - the file path to upload from the local machine. (when uploading a file, the file will be converted into hex string and #                                                            he will be divided (if necessary) into serval
+#file path - the file path to upload from the local machine. (when uploading a file, the file will be converted into hex string
+#                                                             and he will be divided (if necessary) into serval
 #                                                             pastes according to the paste size limit.)
 #upload name - [optional] the name of the paste, if not supplied the name will be the file name. 
 #paste private status - 0 public, 1 unlisted, 2 private. if not supplied the default is 0.
@@ -29,7 +30,8 @@ mycloudobject.upload("file path","upload name[optional]","private status[optiona
 mycloudobject.download("paste name","to path[optional]")
 
 #paste name - the paste to download. (will download all pastes associated with 
-#                                     that name in case of a file that is divided into                                                                                                                              #                                     serval pastes)
+#                                     that name in case of a file that is divided into
+#                                     serval pastes)
 #to path - the path to download to. if not supplied the default is the current working directory.
 
 mycloudobject.delete("paste name")
