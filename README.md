@@ -4,7 +4,7 @@
 ## python api that allows you to upload files as pastes. this requires a pastebin username,password and a developer key.
 
 
-### useage:
+### usage:
 
 ```python
 import pastebincloud #import the api
