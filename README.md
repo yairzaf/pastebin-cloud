@@ -1,5 +1,5 @@
 # pastebin-cloud V0.1
-
+> unlimited space, slow traffic and service limitations.
 
 ## python api that allows you to upload files as pastes. this requires a pastebin username,password and a developer key.
 
@@ -160,3 +160,24 @@ p.thick {
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">created on C:\mycloudtest\test2.txt successfully.</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" color:#00ff00;">In [</span><span style=" font-weight:600; color:#00ff00;">27</span><span style=" color:#00ff00;">]:</span> </p></body></html>
+
+### pastebin limitations for non premium users:
+1. 500kb per paste. (file bigger then 500k will be uploaded in a serval pastes).
+2. uploading rapidly causes spam protection with out error response. (so uploading is automatically delayed by the API).
+3. 25 pastes per 24 hours limit. (deleting pastes of the day also reduces the pastes uploaded that day number)
+4. only 3 private pastes allowed. 
+5. only 10 unlisted pastes allowed. 
+
+### issues:
+
+1. file list wont update properly sometimes, this is mainly related to the pastebin service itself. 
+2. converting to hex string doubles the file size(in the pastes), resulting in slow upload and download. more efficent way to save binary data in string format `(utf-8)` is needed.
+3. need to organize code and error handleing.
+
+### to-do:
+
+1. add file size to the file list
+2. add expriation and file type options to the upload option, and adding this data to the file list.
+3. update function? (delete and reupload).
+4. add an option to upload as a pastebin guest, saving the file list locally.
+5. add a user data function (get all user parameters, such as premium, history etc)
