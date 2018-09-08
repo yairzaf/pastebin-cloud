@@ -1,10 +1,12 @@
 # pastebin-cloud V0.1
-### python api that allows you to upload files as pastes. this requires a pastebin username,password and a developer key.
 
 
-useage:
+## python api that allows you to upload files as pastes. this requires a pastebin username,password and a developer key.
 
-```
+
+### useage:
+
+```python
 import pastebincloud #import the api
 
 mycloudobject = pastebincloud.Cloud("myusername","myuserpassword","mydeveloperkey") #create an instance
