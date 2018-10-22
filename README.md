@@ -9,11 +9,11 @@
 ```python
 import pastebincloud #import the api
 
-mycloudobject = pastebincloud.Cloud("myusername","myuserpassword","mydeveloperkey") #create an instance
+mycloudobject = pastebincloud.Cloud("myusername","myuserpassword","mydeveloperkey") #creates an instance
 
-print(mycloudobject.is_logged()) # boolean. True if loged in, False if not.
+print(mycloudobject.is_logged()) # boolean. True if logged in, False if not.
 
-mycloudobject.print_list() #will output list of files that exist in that users pastebin
+mycloudobject.print_list() # output a list of files that exist in that users pastebin
 
 myfiles = mycloudobject.get_list() #returns the same list as string
 
@@ -40,7 +40,7 @@ mycloudobject.delete("paste name")
 
 ```
 ### example:
-```
+```python
 Python 3.6.6 |Anaconda 4.4.0 (64-bit)| (default, Jun 28 2018, 11:27:44) [MSC v.1900 64 bit (AMD64)]
 
 Type "copyright", "credits" or "license" for more information.
